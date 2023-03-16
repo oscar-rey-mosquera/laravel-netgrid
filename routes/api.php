@@ -44,24 +44,20 @@ Route::put('/profile',
 
 
 Route::post('/favorite/character', 
-[\App\Http\Controllers\Character\FavotiteCharacterController::class, 'handler'])
-->name('favorite.character');
+[\App\Http\Controllers\Character\FavotiteCharacterController::class, 'handler']);
 
 
 
 Route::get('/favorite/character/{id}', 
-[\App\Http\Controllers\Character\GetFavoriteCharactersController::class, 'show'])
-->name('favorite.character');
+[\App\Http\Controllers\Character\GetFavoriteCharactersController::class, 'show']);
 
 
 Route::get('/favorite/characters', 
-[\App\Http\Controllers\Character\GetFavoriteCharactersController::class, 'handler'])
-->name('favorite.character');
+[\App\Http\Controllers\Character\GetFavoriteCharactersController::class, 'handler']);
 
 
 Route::delete('/favorite/character/{id}', 
-[\App\Http\Controllers\Character\DeleteFavoriteCharacterController::class, 'handler'])
-->name('favorite.character');
+[\App\Http\Controllers\Character\DeleteFavoriteCharacterController::class, 'handler']);
 
 
 
